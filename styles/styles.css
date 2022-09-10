@@ -3,7 +3,7 @@
 
 .grillaIndex{
     margin: 0px;
-    background-color: #0b2768;
+    background-image: linear-gradient(to top, #030321, #0b3384);
     display: grid;
     grid-template-areas: 
     "cabecera cabecera" 
@@ -26,7 +26,7 @@
 
 .grillaServicios{
     margin: 0px;
-    background-color: #0b2768;
+    background-image: linear-gradient(to top, #030321, #0b3384);
     display: grid;
     grid-template-areas: 
     "cabecera cabecera" 
@@ -48,7 +48,7 @@
 
 .grillaUbicacion{
   margin: 0px;
-  background-color: #0b2768;
+  background-image: linear-gradient(to top, #030321, #0b3384);
   display: grid;
   grid-template-areas: 
   "cabecera cabecera" 
@@ -73,7 +73,7 @@
 
 .grillaNosotros{
   margin: 0px;
-  background-color: #0b2768;
+  background-image: linear-gradient(to top, #030321, #0b3384);
   display: grid;
   grid-template-areas: 
   "cabecera cabecera" 
@@ -95,7 +95,7 @@
 
 .grillaContacto{
   margin: 0px;
-  background-color: #0b2768;
+  background-image: linear-gradient(to top, #030321, #0b3384);
   display: grid;
   grid-template-areas: 
   "cabecera cabecera" 
@@ -287,7 +287,7 @@ footer {
 
 .grillaIndex {
      margin: 0px;
-     background-color: #0b2768;
+     background-image: linear-gradient(to top, #030321, #0b3384);
      grid-template-areas: 
      "cabecera" 
      "principal"
@@ -302,7 +302,7 @@ footer {
 
 .grillaServicios {
     margin: 0px;
-    background-color: #0b2768;
+    background-image: linear-gradient(to top, #030321, #0b3384);
     grid-template-areas: 
     "cabecera" 
     "principalServ"
@@ -317,7 +317,7 @@ footer {
 
 .grillaUbicacion {
   margin: 0px;
-  background-color: #0b2768;
+  background-image: linear-gradient(to top, #030321, #0b3384);
   grid-template-areas: 
   "cabecera" 
   "principalUbic"
@@ -332,7 +332,7 @@ footer {
 
 .grillaNosotros {
   margin: 0px;
-  background-color: #0b2768;
+  background-image: linear-gradient(to top, #030321, #0b3384);
   grid-template-areas: 
   "cabecera" 
   "principalNos"
@@ -347,7 +347,7 @@ footer {
 
 .grillaContacto {
   margin: 0px;
-  background-color: #0b2768;
+  background-image: linear-gradient(to top, #030321, #0b3384);
   grid-template-areas: 
   "cabecera" 
   "principalContac"
