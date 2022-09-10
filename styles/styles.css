@@ -131,24 +131,29 @@
     padding: 20px;
 }
 
-  header a {
-    padding-top: 10px;        
-    }
+  .logoRodval{
+    padding-top: 10px;
+  }
   
   header ul {
     display: flex;
-    list-style-type: none;
     align-items: flex-end;
-    justify-content: space-between;
-  }
-  
-  header ul li a {
-    padding-left: 20px;
-    color: #ffffff;
+    list-style-type: none;
   }
 
   header li{
     padding-top: 20px;
+    padding-left: 20px;
+  }
+  
+  header ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    border-style: groove;
+    border-color: #ffffff;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 5px;
   }
 
 /*****PRINCIPAL INDEX*****/
