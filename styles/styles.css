@@ -154,6 +154,19 @@
     border-radius: 5px;
     border-width: 2px;
     padding: 5px;
+    cursor: pointer;
+    transition: padding 1s, border-width 1,5s, background-color 1s;
+  }
+
+  header ul li a:hover{
+    color: #316be0;
+    background-color: #ffffff;
+    border-color: red;
+    text-decoration: none;
+    border-style: groove;
+    border-radius: 5px;
+    border-width: 5px;
+    padding: 8px;
   }
 
 /*****PRINCIPAL INDEX*****/
