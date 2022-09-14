@@ -57,7 +57,7 @@ color: grey;
     font-family: Alien-Encounters-Bold;
     font-size: 50px;
     padding-left: 20px;
-    height: 350px;
+    height: 450px;
   }
 
 .presentacion{
@@ -76,7 +76,7 @@ color: grey;
   border-bottom: 02px solid;
   color: white;
   font-family: Alien-Encounters-Bold;
-  height: 350px;
+  height: 450px;
 }
 
 .articleServicios ul li{
@@ -103,8 +103,7 @@ color: grey;
   color: white;
   font-family: Alien-Encounters-Bold;
   padding-left: 20px;
-  height: 350px;
-
+  height: 450px;
 }
 
 .articleUbicacion h1{
@@ -126,8 +125,7 @@ color: grey;
   text-align: center;
   justify-content: center;
   margin: 0px;
-  background-image: linear-gradient(to top, #030321, #0b3384);
-  height: 350px;
+  height: 450px;
   border-top: 02px solid;
   border-bottom: 02px solid;
   color: white;
@@ -147,43 +145,29 @@ color: grey;
 }
 
 
+/*****NOSOTROS*****/
+
+.articleContacto{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  height: 450px;
+  border-top: 02px solid;
+  border-bottom: 02px solid;
+  color: white;
+  font-family: Alien-Encounters-Bold;
+}
+
+.articleContacto h2{
+  font-size: 30px;
+}
+
+
 /*FUENTES*/
 
 @font-face {
     font-family: Alien-Encounters-Bold;
     src: url(../fonts/Alien-Encounters-Bold.ttf);
 }
-
-
-/*****PRINCIPAL NOSOTROS*****/
-
-.borderNos {
-  grid-area: principalNos;
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-  color: white;
-  font-family: Alien-Encounters-Bold;
-}
-
-
-/*****PRINCIPAL CONTACTO*****/
-
-.borderContac {
-  grid-area: principalContac;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  color: white;
-  font-family: Alien-Encounters-Bold;
-  padding-top: 15px;
-  padding-right: 20px;
-}
-
-.borderContac h2{
-  padding-bottom: 230px;
-  font-size: 30px;
-}
-
-
-
