@@ -1,11 +1,11 @@
-/***BODY***/
+/********BODY********/
 
 .backgroundColor {
   background-image: linear-gradient(to top, #030321, #0b3384);
 }
 
 
-/*****CABECERA*****/
+/**********HEADER**********/
 
 .nav{
   font-family: Alien-Encounters-Bold;
@@ -25,7 +25,27 @@ color: grey;
 }
 
 
-/**********INDEX**********/
+/**********FOOTER**********/
+
+.pieDePagina {
+  font-family: Alien-Encounters-Bold;
+  padding: 20px;
+}
+
+.pieDePagina ul li{
+  list-style-type: none;
+  text-align: right;
+}
+
+.pieDePagina ul li a{
+  color: #ffffff;
+}
+
+
+/**********MAIN**********/
+
+
+/*****INDEX*****/
 
 .articleIndex{
     display: flex;
@@ -45,7 +65,7 @@ color: grey;
 }
 
 
-/**********SERVICIOS**********/
+/*****SERVICIOS*****/
 
 .articleServicios{
   display: flex;
@@ -71,15 +91,32 @@ color: grey;
   font-size: 40px;
 }
 
-/**********UBICACIÓN**********/
 
-.grillaUbicacion{
+/*****UBICACIÓN*****/
+
+.articleUbicacion {
   margin: 0px;
-  background-image: linear-gradient(to top, #030321, #0b3384);
-  height: 100vh;
+  display: flex;
+  align-items: center;
   border-top: 02px solid;
   border-bottom: 02px solid;
+  color: white;
+  font-family: Alien-Encounters-Bold;
+  padding-left: 20px;
+  height: 350px;
+
 }
+
+.articleUbicacion h1{
+  font-size: 40px;
+}
+
+.mapa{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
 
 /**********NOSOTROS**********/
 
@@ -99,56 +136,6 @@ color: grey;
     src: url(../fonts/Alien-Encounters-Bold.ttf);
 }
 
-
-/*****PRINCIPAL SERVICIOS*****/
-
-.borderServ {
-    grid-area: principalServ;
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-family: Alien-Encounters-Bold;
-    padding-top: 40px;
-  }
-
-  .borderServ ul li {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-  }
-
-  .borderServ h3{
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-  }
-
-/*****PRINCIPAL UBICACIÓN*****/
-
-.borderUbic {
-  grid-area: principalUbic;
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-  color: white;
-  font-family: Alien-Encounters-Bold;
-}
-
-.borderUbic h1{
-  font-size: 40px;
-}
-
-.borderUbic p{
-  padding-left: 55px;
-}
-
-.borderMapa {
-  grid-area: principalMapa;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 30px;
-}
 
 /*****PRINCIPAL NOSOTROS*****/
 
@@ -192,18 +179,4 @@ color: grey;
 }
 
 
-/*****PIE DE PÁGINA*****/
 
-.pieDePagina {
-    font-family: Alien-Encounters-Bold;
-    padding: 20px;
-  }
-
-.pieDePagina ul li{
-    list-style-type: none;
-    text-align: right;
-  }
-
-.pieDePagina ul li a{
-    color: #ffffff;
-  }
