@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*****HEADER*****/
+/**********COLORS*********/ /**********HEADER**********/
 header {
   grid-area: cabecera;
   display: flex;
@@ -10,7 +10,7 @@ header {
   padding-top: 10px;
 }
 
-/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+/***************VERSIÒN MOBILE (MEDIA QUERI)***************/
 @media screen and (max-width: 480px) {
   /*****CABECERA VERSIÒN MOBILE*****/
   header {
@@ -21,7 +21,7 @@ header {
     padding-top: 10px;
   }
 }
-/*****NAVEGACIÓN*****/
+/**********NAVEGACIÓN**********/
 .navegacion {
   grid-area: barraNav;
 }
@@ -47,7 +47,7 @@ header {
   background-color: white;
 }
 
-/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+/***************VERSIÒN MOBILE (MEDIA QUERI)***************/
 @media screen and (max-width: 480px) {
   /*****NAVEGACIÓN VERSIÒN MOBILE*****/
   .navegacion {
@@ -73,7 +73,7 @@ header {
     background-color: white;
   }
 }
-/*****PIE DE PÁGINA*****/
+/**********FOOTER**********/
 footer {
   grid-area: pieDePagina;
   padding: 20px;
@@ -86,7 +86,7 @@ footer li a {
   color: #ffffff;
 }
 
-/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+/***************VERSIÒN MOBILE (MEDIA QUERI)***************/
 @media screen and (max-width: 480px) {
   /*****PIE DE PAGINA VERSIÓN MOBILE*****/
   footer {
@@ -130,7 +130,7 @@ footer li a {
   padding-left: 20px;
 }
 
-/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+/***************VERSIÒN MOBILE (MEDIA QUERI)***************/
 @media screen and (max-width: 480px) {
   /**********GRID MOBILE INDEX**********/
   .grillaIndex {
@@ -187,7 +187,7 @@ footer li a {
   font-size: 40px;
 }
 
-/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+/***************VERSIÒN MOBILE (MEDIA QUERI)***************/
 @media screen and (max-width: 480px) {
   /**********GRID MOBILE SERVICIOS**********/
   .grillaServicios {
@@ -220,6 +220,7 @@ footer li a {
 .grillaUbicacion {
   margin: 0px;
   background-image: linear-gradient(to top, #030321, #0b3384);
+  display: grid;
   grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principalUbic principalMapa" "principalUbic principalMapa" "principalUbic principalMapa" "pieDePagina pieDePagina";
   grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
   grid-template-columns: 1fr 1fr;
@@ -232,8 +233,8 @@ footer li a {
   flex-direction: column;
   color: #ffffff;
   font-family: Alien-Encounters-Bold;
-  border-bottom: 2px solid;
-  border-top: 2px solid;
+  border-top: solid 2px;
+  border-bottom: solid 2px;
 }
 .grillaUbicacion .borderUbic h1 {
   font-size: 40px;
@@ -248,8 +249,8 @@ footer li a {
   justify-content: flex-end;
   align-items: center;
   padding-right: 30px;
-  border-bottom: 2px solid;
-  border-top: 2px solid;
+  border-top: solid 2px;
+  border-bottom: solid 2px;
 }
 
 /*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
@@ -320,7 +321,7 @@ footer li a {
   padding-right: 20px;
 }
 
-/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+/***************VERSIÒN MOBILE (MEDIA QUERI)***************/
 @media screen and (max-width: 480px) {
   /**********GRID MOBILE NOSOTROS**********/
   .grillaNosotros {
@@ -378,7 +379,7 @@ footer li a {
   font-size: 30px;
 }
 
-/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+/***************VERSIÒN MOBILE (MEDIA QUERI)***************/
 @media screen and (max-width: 480px) {
   /**********GRID MOBILE CONTACTO**********/
   .grillaContacto {
@@ -404,7 +405,7 @@ footer li a {
     padding-bottom: 0px;
   }
 }
-/*FUENTES*/
+/**********FUENTES**********/
 @font-face {
   font-family: Alien-Encounters-Bold;
   src: url(../fonts/Alien-Encounters-Bold.ttf);

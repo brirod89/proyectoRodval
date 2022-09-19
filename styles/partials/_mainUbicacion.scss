@@ -3,6 +3,7 @@
 .grillaUbicacion {
     margin: 0px;
     background-image: linear-gradient(to top, $backgroundColorUno, $backgroundColorDos);
+    display: grid;
     grid-template-areas:
         "cabecera cabecera"
         "barraNav barraNav"
@@ -21,8 +22,8 @@
         flex-direction: column;
         color: $colorFont;
         font-family: Alien-Encounters-Bold;
-        border-bottom: 02px solid;
-        border-top: 02px solid;
+        border-top: solid 2px;
+        border-bottom: solid 2px;
 
         h1 {
             font-size: 40px;
@@ -32,6 +33,7 @@
         p {
             padding-left: 55px;
         }
+
     }
 
     .borderMapa {
@@ -40,10 +42,11 @@
         justify-content: flex-end;
         align-items: center;
         padding-right: 30px;
-        border-bottom: 02px solid;
-        border-top: 02px solid;
+        border-top: solid 2px;
+        border-bottom: solid 2px;
     }
 }
+
 
 /*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
 
