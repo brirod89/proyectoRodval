@@ -20,7 +20,7 @@
         display: flex;
         justify-content: left;
         flex-direction: column;
-        color: $principalColorFont;
+        color: $colorFont;
         font-family: Alien-Encounters-Bold;
         border-bottom: 02px solid;
         border-top: 02px solid;
@@ -35,6 +35,49 @@
             font-size: 20px;
             padding-left: 20px;
             padding-right: 20px;
+        }
+    }
+}
+
+/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+
+@media screen and (max-width: 480px) {
+
+    /**********GRID MOBILE NOSOTROS**********/
+
+    .grillaNosotros {
+        margin: 0px;
+        background-image: linear-gradient(to top, $backgroundColorUno, $backgroundColorDos);
+        grid-template-areas:
+            "cabecera"
+            "barraNav"
+            "principalNos"
+            "principalNos"
+            "pieDePagina";
+        grid-template-rows: 150px 50px 200px 200px 100px;
+        grid-template-columns: 1fr;
+        height: 100vh;
+
+        .borderNos {
+            grid-area: principalNos;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: $colorFont;
+            font-family: Alien-Encounters-Bold;
+            padding-left: 40px;
+
+            h1 {
+                font-size: 25px;
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                font-size: 15px;
+                padding-bottom: 20px;
+            }
         }
     }
 }

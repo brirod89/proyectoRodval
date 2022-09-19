@@ -19,7 +19,7 @@
         grid-area: principal;
         display: flex;
         align-items: center;
-        color: $principalColorFont;
+        color: $colorFont;
         font-family: Alien-Encounters-Bold;
         border-bottom: 02px solid;
         border-top: 02px solid;
@@ -29,6 +29,43 @@
             width: 550px;
             font-size: 50px;
             padding-left: 20px;
+        }
+    }
+}
+
+/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+
+@media screen and (max-width: 480px) {
+
+    /**********GRID MOBILE INDEX**********/
+
+    .grillaIndex {
+        margin: 0px;
+        background-image: linear-gradient(to top, $backgroundColorUno, $backgroundColorDos);
+        grid-template-areas:
+            "cabecera"
+            "barraNav"
+            "principal"
+            "principal"
+            "pieDePagina";
+        grid-template-rows: 150px 50px 200px 200px 100px;
+        grid-template-columns: 1fr;
+        height: 100vh;
+
+        .mainIndex {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: $colorFont;
+            font-family: Alien-Encounters-Bold;
+            padding-top: 150px;
+            padding-bottom: 150px;
+            padding-right: 50px;
+
+            h1 {
+                width: 200px;
+                font-size: 30px;
+            }
         }
     }
 }

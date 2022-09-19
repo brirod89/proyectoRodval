@@ -9,3 +9,19 @@ header {
 .logoRodval {
     padding-top: 10px;
 }
+
+/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+
+@media screen and (max-width: 480px) {
+
+    /*****CABECERA VERSIÒN MOBILE*****/
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logoRodval {
+        padding-top: 10px;
+    }
+}

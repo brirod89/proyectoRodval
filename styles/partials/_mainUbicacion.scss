@@ -19,7 +19,7 @@
         display: flex;
         justify-content: left;
         flex-direction: column;
-        color: $principalColorFont;
+        color: $colorFont;
         font-family: Alien-Encounters-Bold;
         border-bottom: 02px solid;
         border-top: 02px solid;
@@ -42,5 +42,54 @@
         padding-right: 30px;
         border-bottom: 02px solid;
         border-top: 02px solid;
+    }
+}
+
+/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+
+@media screen and (max-width: 480px) {
+
+    /**********GRID MOBILE UBICACIÓN**********/
+
+    .grillaUbicacion {
+        margin: 0px;
+        background-image: linear-gradient(to top, $backgroundColorUno, $backgroundColorDos);
+        grid-template-areas:
+            "cabecera"
+            "barraNav"
+            "principalUbic"
+            "principalMapa"
+            "pieDePagina";
+        grid-template-rows: 150px 50px 200px 500px 100px;
+        grid-template-columns: 1fr;
+        height: 100vh;
+
+        .borderUbic {
+            grid-area: principalUbic;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 50px;
+            color: $colorFont;
+            font-family: Alien-Encounters-Bold;
+            border-bottom: none;
+            padding-top: 100px;
+
+            h1 {
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+
+        .borderMapa {
+            grid-area: principalMapa;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 30px;
+            border-top: none;
+            padding-top: 50px;
+        }
     }
 }

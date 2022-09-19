@@ -11,7 +11,7 @@
         padding-right: 20px;
 
         a {
-            color: $principalColorFont;
+            color: $colorFont;
             font-family: Alien-Encounters-Bold;
             text-decoration: none;
             padding: 10px;
@@ -23,6 +23,40 @@
             &:hover {
                 color: #030321;
                 background-color: white;
+            }
+        }
+    }
+}
+
+
+/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+
+@media screen and (max-width: 480px) {
+
+    /*****NAVEGACIÓN VERSIÒN MOBILE*****/
+
+    .navegacion {
+        grid-area: barraNav;
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style-type: none;
+
+            a {
+                color: $colorFont;
+                font-family: Alien-Encounters-Bold;
+                text-decoration: none;
+                padding: 10px;
+                cursor: pointer;
+                transition: color 1s, background-color 1s;
+                border-style: hidden;
+                border-radius: 5px;
+
+                &:hover {
+                    color: #030321;
+                    background-color: white;
+                }
             }
         }
     }

@@ -20,7 +20,7 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-evenly;
-        color: $principalColorFont;
+        color: $colorFont;
         font-family: Alien-Encounters-Bold;
         padding-top: 15px;
         padding-right: 20px;
@@ -33,4 +33,51 @@
         }
     }
 
+}
+
+/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+
+@media screen and (max-width: 480px) {
+
+    /**********GRID MOBILE CONTACTO**********/
+
+    .grillaContacto {
+        margin: 0px;
+        background-image: linear-gradient(to top, $backgroundColorUno, $backgroundColorDos);
+        grid-template-areas:
+            "cabecera"
+            "barraNav"
+            "principalContac"
+            "principalContac"
+            "principalContac"
+            "principalContac"
+            "principalContac"
+            "principalContac"
+            "principalContac"
+            "principalContac"
+            "principalContac"
+            "principalContac"
+            "principalContac"
+            "principalContac"
+            "pieDePagina";
+        grid-template-rows: repeat(15, 1fr);
+        grid-template-columns: 1fr;
+        height: 100vh;
+
+        .borderContac {
+            grid-area: principalContac;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            color: $colorFont;
+            font-family: Alien-Encounters-Bold;
+            padding-left: 10px;
+
+            h2 {
+                font-size: 30px;
+                padding-bottom: 0px;
+            }
+        }
+    }
 }
