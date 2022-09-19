@@ -10,6 +10,17 @@ header {
   padding-top: 10px;
 }
 
+/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+@media screen and (max-width: 480px) {
+  /*****CABECERA VERSIÒN MOBILE*****/
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .logoRodval {
+    padding-top: 10px;
+  }
+}
 /*****NAVEGACIÓN*****/
 .navegacion {
   grid-area: barraNav;
@@ -36,320 +47,8 @@ header {
   background-color: white;
 }
 
-/*****PIE DE PÁGINA*****/
-footer {
-  grid-area: pieDePagina;
-  padding: 20px;
-}
-footer li {
-  list-style-type: none;
-  text-align: right;
-}
-footer li a {
-  color: #ffffff;
-}
-
-/**********INDEX**********/
-.grillaIndex {
-  margin: 0px;
-  background-image: linear-gradient(to top, #030321, #0b3384);
-  display: grid;
-  grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principal principal" "principal principal" "principal principal" "pieDePagina pieDePagina";
-  grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
-}
-.grillaIndex .mainIndex {
-  grid-area: principal;
-  display: flex;
-  align-items: center;
-  color: white;
-  font-family: Alien-Encounters-Bold;
-  border-bottom: 2px solid;
-  border-top: 2px solid;
-}
-.grillaIndex .mainIndex h1 {
-  display: flex;
-  width: 550px;
-  font-size: 50px;
-  padding-left: 20px;
-}
-
-/**********SERVICIOS**********/
-.grillaServicios {
-  margin: 0px;
-  background-image: linear-gradient(to top, #030321, #0b3384);
-  display: grid;
-  grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principalServ principalServ" "principalServ principalServ" "principalServ principalServ" "pieDePagina pieDePagina";
-  grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
-}
-.grillaServicios .borderServ {
-  grid-area: principalServ;
-  display: flex;
-  justify-content: center;
-  color: white;
-  font-family: Alien-Encounters-Bold;
-  padding-top: 40px;
-  border-bottom: 2px solid;
-  border-top: 2px solid;
-}
-.grillaServicios .borderServ li {
-  display: flex;
-  justify-content: center;
-  font-size: 25px;
-}
-.grillaServicios .borderServ h3 {
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-}
-
-/**********UBICACIÓN**********/
-.grillaUbicacion {
-  margin: 0px;
-  background-image: linear-gradient(to top, #030321, #0b3384);
-  display: grid;
-  grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principalUbic principalMapa" "principalUbic principalMapa" "principalUbic principalMapa" "pieDePagina pieDePagina";
-  grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
-}
-.grillaUbicacion .borderUbic {
-  grid-area: principalUbic;
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-  color: white;
-  font-family: Alien-Encounters-Bold;
-  border-bottom: 2px solid;
-  border-top: 2px solid;
-}
-.grillaUbicacion .borderUbic h1 {
-  font-size: 40px;
-  padding-left: 55px;
-}
-.grillaUbicacion .borderUbic p {
-  padding-left: 55px;
-}
-.grillaUbicacion .borderMapa {
-  grid-area: principalMapa;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 30px;
-  border-bottom: 2px solid;
-  border-top: 2px solid;
-}
-
-/**********NOSOTROS**********/
-.grillaNosotros {
-  margin: 0px;
-  background-image: linear-gradient(to top, #030321, #0b3384);
-  display: grid;
-  grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principalNos principalNos" "principalNos principalNos" "principalNos principalNos" "pieDePagina pieDePagina";
-  grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
-}
-.grillaNosotros .borderNos {
-  grid-area: principalNos;
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-  color: white;
-  font-family: Alien-Encounters-Bold;
-  border-bottom: 2px solid;
-  border-top: 2px solid;
-}
-.grillaNosotros .borderNos h1 {
-  font-size: 35px;
-  text-align: center;
-}
-.grillaNosotros .borderNos p {
-  text-align: center;
-  font-size: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/**********CONTACTO**********/
-.grillaContacto {
-  margin: 0px;
-  background-image: linear-gradient(to top, #030321, #0b3384);
-  display: grid;
-  grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principalContac principalContac" "principalContac principalContac" "principalContac principalContac" "pieDePagina pieDePagina";
-  grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
-}
-.grillaContacto .borderContac {
-  grid-area: principalContac;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  color: white;
-  font-family: Alien-Encounters-Bold;
-  padding-top: 15px;
-  padding-right: 20px;
-  border-bottom: 2px solid;
-  border-top: 2px solid;
-}
-.grillaContacto .borderContac h2 {
-  padding-bottom: 230px;
-  font-size: 30px;
-}
-
-/*FUENTES*/
-@font-face {
-  font-family: Alien-Encounters-Bold;
-  src: url(../fonts/Alien-Encounters-Bold.ttf);
-}
 /*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
 @media screen and (max-width: 480px) {
-  /**********GRID MOBILE INDEX**********/
-  .grillaIndex {
-    margin: 0px;
-    background-image: linear-gradient(to top, #030321, #0b3384);
-    grid-template-areas: "cabecera" "barraNav" "principal" "principal" "pieDePagina";
-    grid-template-rows: 150px 50px 200px 200px 100px;
-    grid-template-columns: 1fr;
-    height: 100vh;
-  }
-  .grillaIndex .mainIndex {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    font-family: Alien-Encounters-Bold;
-    padding-top: 150px;
-    padding-bottom: 150px;
-    padding-right: 50px;
-  }
-  .grillaIndex .mainIndex h1 {
-    width: 200px;
-    font-size: 30px;
-  }
-  /**********GRID MOBILE SERVICIOS**********/
-  .grillaServicios {
-    margin: 0px;
-    background-image: linear-gradient(to top, #030321, #0b3384);
-    grid-template-areas: "cabecera" "barraNav" "principalServ" "principalServ" "pieDePagina";
-    grid-template-rows: 150px 50px 200px 200px 100px;
-    grid-template-columns: 1fr;
-    height: 100vh;
-  }
-  .grillaServicios .borderServ {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    font-family: Alien-Encounters-Bold;
-    padding-top: 155px;
-    padding-bottom: 150px;
-    padding-right: 50px;
-  }
-  .grillaServicios .borderServ li {
-    font-size: 20px;
-  }
-  .grillaServicios .borderServ h3 {
-    font-size: 25px;
-  }
-  /**********GRID MOBILE UBICACIÓN**********/
-  .grillaUbicacion {
-    margin: 0px;
-    background-image: linear-gradient(to top, #030321, #0b3384);
-    grid-template-areas: "cabecera" "barraNav" "principalUbic" "principalMapa" "pieDePagina";
-    grid-template-rows: 150px 50px 200px 500px 100px;
-    grid-template-columns: 1fr;
-    height: 100vh;
-  }
-  .grillaUbicacion .borderUbic {
-    grid-area: principalUbic;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 50px;
-    color: white;
-    font-family: Alien-Encounters-Bold;
-    border-bottom: none;
-    padding-top: 100px;
-  }
-  .grillaUbicacion .borderUbic h1 {
-    font-size: 30px;
-    text-align: center;
-  }
-  .grillaUbicacion .borderMapa {
-    grid-area: principalMapa;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 30px;
-    border-top: none;
-    padding-top: 50px;
-  }
-  /**********GRID MOBILE NOSOTROS**********/
-  .grillaNosotros {
-    margin: 0px;
-    background-image: linear-gradient(to top, #030321, #0b3384);
-    grid-template-areas: "cabecera" "barraNav" "principalNos" "principalNos" "pieDePagina";
-    grid-template-rows: 150px 50px 200px 200px 100px;
-    grid-template-columns: 1fr;
-    height: 100vh;
-  }
-  .grillaNosotros .borderNos {
-    grid-area: principalNos;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    font-family: Alien-Encounters-Bold;
-    padding-left: 40px;
-  }
-  .grillaNosotros .borderNos h1 {
-    font-size: 25px;
-    text-align: center;
-  }
-  .grillaNosotros .borderNos p {
-    text-align: center;
-    font-size: 15px;
-    padding-bottom: 20px;
-  }
-  /**********GRID MOBILE CONTACTO**********/
-  .grillaContacto {
-    margin: 0px;
-    background-image: linear-gradient(to top, #030321, #0b3384);
-    grid-template-areas: "cabecera" "barraNav" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "pieDePagina";
-    grid-template-rows: repeat(15, 1fr);
-    grid-template-columns: 1fr;
-    height: 100vh;
-  }
-  .grillaContacto .borderContac {
-    grid-area: principalContac;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    font-family: Alien-Encounters-Bold;
-    padding-left: 10px;
-  }
-  .grillaContacto .borderContac h2 {
-    font-size: 30px;
-    padding-bottom: 0px;
-  }
-  /*****CABECERA VERSIÒN MOBILE*****/
-  header {
-    display: flex;
-    justify-content: center;
-  }
-  .logoRodval {
-    padding-top: 10px;
-  }
   /*****NAVEGACIÓN VERSIÒN MOBILE*****/
   .navegacion {
     grid-area: barraNav;
@@ -373,6 +72,22 @@ footer li a {
     color: #030321;
     background-color: white;
   }
+}
+/*****PIE DE PÁGINA*****/
+footer {
+  grid-area: pieDePagina;
+  padding: 20px;
+}
+footer li {
+  list-style-type: none;
+  text-align: right;
+}
+footer li a {
+  color: #ffffff;
+}
+
+/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+@media screen and (max-width: 480px) {
   /*****PIE DE PAGINA VERSIÓN MOBILE*****/
   footer {
     padding: 0px;
@@ -382,10 +97,315 @@ footer li a {
     flex-direction: column;
     justify-content: center;
     list-style-type: none;
-    color: white;
+    color: #ffffff;
     padding-right: 30px;
   }
   footer li a {
     color: #ffffff;
   }
+}
+/**********INDEX**********/
+.grillaIndex {
+  margin: 0px;
+  background-image: linear-gradient(to top, #030321, #0b3384);
+  display: grid;
+  grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principal principal" "principal principal" "principal principal" "pieDePagina pieDePagina";
+  grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+.grillaIndex .mainIndex {
+  grid-area: principal;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: Alien-Encounters-Bold;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+}
+.grillaIndex .mainIndex h1 {
+  display: flex;
+  width: 550px;
+  font-size: 50px;
+  padding-left: 20px;
+}
+
+/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+@media screen and (max-width: 480px) {
+  /**********GRID MOBILE INDEX**********/
+  .grillaIndex {
+    margin: 0px;
+    background-image: linear-gradient(to top, #030321, #0b3384);
+    grid-template-areas: "cabecera" "barraNav" "principal" "principal" "pieDePagina";
+    grid-template-rows: 150px 50px 200px 200px 100px;
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .grillaIndex .mainIndex {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    font-family: Alien-Encounters-Bold;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-right: 50px;
+  }
+  .grillaIndex .mainIndex h1 {
+    width: 200px;
+    font-size: 30px;
+  }
+}
+/**********SERVICIOS**********/
+.grillaServicios {
+  margin: 0px;
+  background-image: linear-gradient(to top, #030321, #0b3384);
+  display: grid;
+  grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principalServ principalServ" "principalServ principalServ" "principalServ principalServ" "pieDePagina pieDePagina";
+  grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+.grillaServicios .borderServ {
+  grid-area: principalServ;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-family: Alien-Encounters-Bold;
+  padding-top: 40px;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+}
+.grillaServicios .borderServ li {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+.grillaServicios .borderServ h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+@media screen and (max-width: 480px) {
+  /**********GRID MOBILE SERVICIOS**********/
+  .grillaServicios {
+    margin: 0px;
+    background-image: linear-gradient(to top, #030321, #0b3384);
+    grid-template-areas: "cabecera" "barraNav" "principalServ" "principalServ" "pieDePagina";
+    grid-template-rows: 150px 50px 200px 200px 100px;
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .grillaServicios .borderServ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-family: Alien-Encounters-Bold;
+    padding-top: 155px;
+    padding-bottom: 150px;
+    padding-right: 50px;
+  }
+  .grillaServicios .borderServ li {
+    font-size: 20px;
+  }
+  .grillaServicios .borderServ h3 {
+    font-size: 25px;
+  }
+}
+/**********UBICACIÓN**********/
+.grillaUbicacion {
+  margin: 0px;
+  background-image: linear-gradient(to top, #030321, #0b3384);
+  grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principalUbic principalMapa" "principalUbic principalMapa" "principalUbic principalMapa" "pieDePagina pieDePagina";
+  grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+.grillaUbicacion .borderUbic {
+  grid-area: principalUbic;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  color: #ffffff;
+  font-family: Alien-Encounters-Bold;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+}
+.grillaUbicacion .borderUbic h1 {
+  font-size: 40px;
+  padding-left: 55px;
+}
+.grillaUbicacion .borderUbic p {
+  padding-left: 55px;
+}
+.grillaUbicacion .borderMapa {
+  grid-area: principalMapa;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+}
+
+/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+@media screen and (max-width: 480px) {
+  /**********GRID MOBILE UBICACIÓN**********/
+  .grillaUbicacion {
+    margin: 0px;
+    background-image: linear-gradient(to top, #030321, #0b3384);
+    grid-template-areas: "cabecera" "barraNav" "principalUbic" "principalMapa" "pieDePagina";
+    grid-template-rows: 150px 50px 200px 500px 100px;
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .grillaUbicacion .borderUbic {
+    grid-area: principalUbic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50px;
+    color: #ffffff;
+    font-family: Alien-Encounters-Bold;
+    border-bottom: none;
+    padding-top: 100px;
+  }
+  .grillaUbicacion .borderUbic h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .grillaUbicacion .borderMapa {
+    grid-area: principalMapa;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 30px;
+    border-top: none;
+    padding-top: 50px;
+  }
+}
+/**********NOSOTROS**********/
+.grillaNosotros {
+  margin: 0px;
+  background-image: linear-gradient(to top, #030321, #0b3384);
+  display: grid;
+  grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principalNos principalNos" "principalNos principalNos" "principalNos principalNos" "pieDePagina pieDePagina";
+  grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+.grillaNosotros .borderNos {
+  grid-area: principalNos;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  color: #ffffff;
+  font-family: Alien-Encounters-Bold;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+}
+.grillaNosotros .borderNos h1 {
+  font-size: 35px;
+  text-align: center;
+}
+.grillaNosotros .borderNos p {
+  text-align: center;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+@media screen and (max-width: 480px) {
+  /**********GRID MOBILE NOSOTROS**********/
+  .grillaNosotros {
+    margin: 0px;
+    background-image: linear-gradient(to top, #030321, #0b3384);
+    grid-template-areas: "cabecera" "barraNav" "principalNos" "principalNos" "pieDePagina";
+    grid-template-rows: 150px 50px 200px 200px 100px;
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .grillaNosotros .borderNos {
+    grid-area: principalNos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    font-family: Alien-Encounters-Bold;
+    padding-left: 40px;
+  }
+  .grillaNosotros .borderNos h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .grillaNosotros .borderNos p {
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+}
+/**********CONTACTO**********/
+.grillaContacto {
+  margin: 0px;
+  background-image: linear-gradient(to top, #030321, #0b3384);
+  display: grid;
+  grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principalContac principalContac" "principalContac principalContac" "principalContac principalContac" "pieDePagina pieDePagina";
+  grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+.grillaContacto .borderContac {
+  grid-area: principalContac;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  color: #ffffff;
+  font-family: Alien-Encounters-Bold;
+  padding-top: 15px;
+  padding-right: 20px;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+}
+.grillaContacto .borderContac h2 {
+  padding-bottom: 230px;
+  font-size: 30px;
+}
+
+/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
+@media screen and (max-width: 480px) {
+  /**********GRID MOBILE CONTACTO**********/
+  .grillaContacto {
+    margin: 0px;
+    background-image: linear-gradient(to top, #030321, #0b3384);
+    grid-template-areas: "cabecera" "barraNav" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "pieDePagina";
+    grid-template-rows: repeat(15, 1fr);
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .grillaContacto .borderContac {
+    grid-area: principalContac;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    font-family: Alien-Encounters-Bold;
+    padding-left: 10px;
+  }
+  .grillaContacto .borderContac h2 {
+    font-size: 30px;
+    padding-bottom: 0px;
+  }
+}
+/*FUENTES*/
+@font-face {
+  font-family: Alien-Encounters-Bold;
+  src: url(../fonts/Alien-Encounters-Bold.ttf);
 }/*# sourceMappingURL=styles.css.map */
