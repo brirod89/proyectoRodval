@@ -9,10 +9,20 @@
   grid-template-columns: 1fr 1fr;
   height: 100vh;
 }
-
-.borderIndex {
+.grillaIndex .mainIndex {
+  grid-area: principal;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: Alien-Encounters-Bold;
   border-bottom: 2px solid;
   border-top: 2px solid;
+}
+.grillaIndex .mainIndex h1 {
+  display: flex;
+  width: 550px;
+  font-size: 50px;
+  padding-left: 20px;
 }
 
 /**********SERVICIOS**********/
@@ -25,10 +35,25 @@
   grid-template-columns: 1fr 1fr;
   height: 100vh;
 }
-
-.borderServ {
+.grillaServicios .borderServ {
+  grid-area: principalServ;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: Alien-Encounters-Bold;
+  padding-top: 40px;
   border-bottom: 2px solid;
   border-top: 2px solid;
+}
+.grillaServicios .borderServ li {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+.grillaServicios .borderServ h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
 }
 
 /**********UBICACIÓN**********/
@@ -41,13 +66,29 @@
   grid-template-columns: 1fr 1fr;
   height: 100vh;
 }
-
-.borderUbic {
+.grillaUbicacion .borderUbic {
+  grid-area: principalUbic;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  color: white;
+  font-family: Alien-Encounters-Bold;
   border-bottom: 2px solid;
   border-top: 2px solid;
 }
-
-.borderMapa {
+.grillaUbicacion .borderUbic h1 {
+  font-size: 40px;
+  padding-left: 55px;
+}
+.grillaUbicacion .borderUbic p {
+  padding-left: 55px;
+}
+.grillaUbicacion .borderMapa {
+  grid-area: principalMapa;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
   border-bottom: 2px solid;
   border-top: 2px solid;
 }
@@ -62,10 +103,25 @@
   grid-template-columns: 1fr 1fr;
   height: 100vh;
 }
-
-.borderNos {
+.grillaNosotros .borderNos {
+  grid-area: principalNos;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  color: white;
+  font-family: Alien-Encounters-Bold;
   border-bottom: 2px solid;
   border-top: 2px solid;
+}
+.grillaNosotros .borderNos h1 {
+  font-size: 35px;
+  text-align: center;
+}
+.grillaNosotros .borderNos p {
+  text-align: center;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /**********CONTACTO**********/
@@ -78,10 +134,21 @@
   grid-template-columns: 1fr 1fr;
   height: 100vh;
 }
-
-.borderContac {
+.grillaContacto .borderContac {
+  grid-area: principalContac;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  color: white;
+  font-family: Alien-Encounters-Bold;
+  padding-top: 15px;
+  padding-right: 20px;
   border-bottom: 2px solid;
   border-top: 2px solid;
+}
+.grillaContacto .borderContac h2 {
+  padding-bottom: 230px;
+  font-size: 30px;
 }
 
 /*FUENTES*/
@@ -126,102 +193,6 @@ header {
   background-color: white;
 }
 
-/*****PRINCIPAL INDEX*****/
-.borderIndex {
-  grid-area: principal;
-  display: flex;
-  align-items: center;
-  color: white;
-  font-family: Alien-Encounters-Bold;
-}
-.borderIndex h1 {
-  display: flex;
-  width: 550px;
-  font-size: 50px;
-  padding-left: 20px;
-}
-
-/*****PRINCIPAL SERVICIOS*****/
-.borderServ {
-  grid-area: principalServ;
-  display: flex;
-  justify-content: center;
-  color: white;
-  font-family: Alien-Encounters-Bold;
-  padding-top: 40px;
-}
-.borderServ li {
-  display: flex;
-  justify-content: center;
-  font-size: 25px;
-}
-.borderServ h3 {
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-}
-
-/*****PRINCIPAL UBICACIÓN*****/
-.borderUbic {
-  grid-area: principalUbic;
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-  color: white;
-  font-family: Alien-Encounters-Bold;
-}
-.borderUbic h1 {
-  font-size: 40px;
-  padding-left: 55px;
-}
-.borderUbic p {
-  padding-left: 55px;
-}
-
-.borderMapa {
-  grid-area: principalMapa;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 30px;
-}
-
-/*****PRINCIPAL NOSOTROS*****/
-.borderNos {
-  grid-area: principalNos;
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-  color: white;
-  font-family: Alien-Encounters-Bold;
-}
-.borderNos h1 {
-  font-size: 35px;
-  text-align: center;
-}
-.borderNos p {
-  text-align: center;
-  font-size: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/*****PRINCIPAL CONTACTO*****/
-.borderContac {
-  grid-area: principalContac;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  color: white;
-  font-family: Alien-Encounters-Bold;
-  padding-top: 15px;
-  padding-right: 20px;
-}
-.borderContac h2 {
-  padding-bottom: 230px;
-  font-size: 30px;
-}
-
 /*****PIE DE PÁGINA*****/
 footer {
   grid-area: pieDePagina;
@@ -235,7 +206,7 @@ footer li a {
   color: #ffffff;
 }
 
-/********** VERSIÒN MOBILE (MEDIA QUERI)**********/
+/*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
 @media screen and (max-width: 480px) {
   /**********GRID MOBILE INDEX**********/
   .grillaIndex {
@@ -246,6 +217,20 @@ footer li a {
     grid-template-columns: 1fr;
     height: 100vh;
   }
+  .grillaIndex .mainIndex {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: Alien-Encounters-Bold;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-right: 50px;
+  }
+  .grillaIndex .mainIndex h1 {
+    width: 200px;
+    font-size: 30px;
+  }
   /**********GRID MOBILE SERVICIOS**********/
   .grillaServicios {
     margin: 0px;
@@ -254,6 +239,23 @@ footer li a {
     grid-template-rows: 150px 50px 200px 200px 100px;
     grid-template-columns: 1fr;
     height: 100vh;
+  }
+  .grillaServicios .borderServ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: Alien-Encounters-Bold;
+    padding-top: 155px;
+    padding-bottom: 150px;
+    padding-right: 50px;
+  }
+  .grillaServicios .borderServ li {
+    font-size: 20px;
+  }
+  .grillaServicios .borderServ h3 {
+    font-size: 25px;
   }
   /**********GRID MOBILE UBICACIÓN**********/
   .grillaUbicacion {
@@ -264,6 +266,31 @@ footer li a {
     grid-template-columns: 1fr;
     height: 100vh;
   }
+  .grillaUbicacion .borderUbic {
+    grid-area: principalUbic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50px;
+    color: white;
+    font-family: Alien-Encounters-Bold;
+    border-bottom: none;
+    padding-top: 100px;
+  }
+  .grillaUbicacion .borderUbic h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .grillaUbicacion .borderMapa {
+    grid-area: principalMapa;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 30px;
+    border-top: none;
+    padding-top: 50px;
+  }
   /**********GRID MOBILE NOSOTROS**********/
   .grillaNosotros {
     margin: 0px;
@@ -273,6 +300,25 @@ footer li a {
     grid-template-columns: 1fr;
     height: 100vh;
   }
+  .grillaNosotros .borderNos {
+    grid-area: principalNos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: Alien-Encounters-Bold;
+    padding-left: 40px;
+  }
+  .grillaNosotros .borderNos h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .grillaNosotros .borderNos p {
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
   /**********GRID MOBILE CONTACTO**********/
   .grillaContacto {
     margin: 0px;
@@ -281,6 +327,20 @@ footer li a {
     grid-template-rows: repeat(15, 1fr);
     grid-template-columns: 1fr;
     height: 100vh;
+  }
+  .grillaContacto .borderContac {
+    grid-area: principalContac;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: Alien-Encounters-Bold;
+    padding-left: 10px;
+  }
+  .grillaContacto .borderContac h2 {
+    font-size: 30px;
+    padding-bottom: 0px;
   }
   /*****CABECERA VERSIÒN MOBILE*****/
   header {
@@ -312,100 +372,6 @@ footer li a {
   .navegacion ul a:hover {
     color: #030321;
     background-color: white;
-  }
-  /*****PRINCIPAL INDEX VERSIÓN MOBILE*****/
-  .borderIndex {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    font-family: Alien-Encounters-Bold;
-    padding-top: 150px;
-    padding-bottom: 150px;
-    padding-right: 50px;
-  }
-  .borderIndex h1 {
-    width: 200px;
-    font-size: 30px;
-  }
-  /*****PRINCIPAL SERVICIOS VERSIÓN MOBILE*****/
-  .borderServ {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    font-family: Alien-Encounters-Bold;
-    padding-top: 155px;
-    padding-bottom: 150px;
-    padding-right: 50px;
-  }
-  .borderServ li {
-    font-size: 20px;
-  }
-  .borderServ h3 {
-    font-size: 25px;
-  }
-  /*****PRINCIPAL UBICACIÓN VERSIÓN MOBILE*****/
-  .borderUbic {
-    grid-area: principalUbic;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 50px;
-    color: white;
-    font-family: Alien-Encounters-Bold;
-    border-bottom: none;
-    padding-top: 100px;
-  }
-  .borderUbic h1 {
-    font-size: 30px;
-    text-align: center;
-  }
-  .borderMapa {
-    grid-area: principalMapa;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 30px;
-    border-top: none;
-    padding-top: 50px;
-  }
-  /*****PRINCIPAL NOSOTROS VERSIÓN MOBILE*****/
-  .borderNos {
-    grid-area: principalNos;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    font-family: Alien-Encounters-Bold;
-    padding-left: 40px;
-  }
-  .borderNos h1 {
-    font-size: 25px;
-    text-align: center;
-  }
-  .borderNos p {
-    text-align: center;
-    font-size: 15px;
-    padding-bottom: 20px;
-  }
-  /*****PRINCIPAL CONTACTO VERSIÓN MOBILE*****/
-  .borderContac {
-    grid-area: principalContac;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    font-family: Alien-Encounters-Bold;
-    padding-left: 10px;
-  }
-  .borderContac h2 {
-    font-size: 30px;
-    padding-bottom: 0px;
   }
   /*****PIE DE PAGINA VERSIÓN MOBILE*****/
   footer {
