@@ -1,133 +1,95 @@
+@charset "UTF-8";
 /**********INDEX**********/
-
 .grillaIndex {
   margin: 0px;
   background-image: linear-gradient(to top, #030321, #0b3384);
   display: grid;
-  grid-template-areas:
-    "cabecera cabecera"
-    "barraNav barraNav"
-    "principal principal"
-    "principal principal"
-    "principal principal"
-    "pieDePagina pieDePagina";
-    grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
-    grid-template-columns: 1fr 1fr;
+  grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principal principal" "principal principal" "principal principal" "pieDePagina pieDePagina";
+  grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
+  grid-template-columns: 1fr 1fr;
   height: 100vh;
 }
 
 .borderIndex {
-  border-bottom: 02px solid;
-  border-top: 02px solid;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
 }
 
-
 /**********SERVICIOS**********/
-
 .grillaServicios {
   margin: 0px;
   background-image: linear-gradient(to top, #030321, #0b3384);
   display: grid;
-  grid-template-areas:
-    "cabecera cabecera"
-    "barraNav barraNav"
-    "principalServ principalServ"
-    "principalServ principalServ"
-    "principalServ principalServ"
-    "pieDePagina pieDePagina";
-    grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
-    grid-template-columns: 1fr 1fr;
+  grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principalServ principalServ" "principalServ principalServ" "principalServ principalServ" "pieDePagina pieDePagina";
+  grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
+  grid-template-columns: 1fr 1fr;
   height: 100vh;
 }
 
 .borderServ {
-  border-bottom: 02px solid;
-  border-top: 02px solid;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
 }
 
 /**********UBICACIÓN**********/
-
 .grillaUbicacion {
   margin: 0px;
   background-image: linear-gradient(to top, #030321, #0b3384);
   display: grid;
-  grid-template-areas:
-    "cabecera cabecera"
-    "barraNav barraNav"
-    "principalUbic principalMapa"
-    "principalUbic principalMapa"
-    "principalUbic principalMapa"
-    "pieDePagina pieDePagina";
+  grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principalUbic principalMapa" "principalUbic principalMapa" "principalUbic principalMapa" "pieDePagina pieDePagina";
   grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
 }
 
 .borderUbic {
-  border-bottom: 02px solid;
-  border-top: 02px solid;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
 }
 
 .borderMapa {
-  border-bottom: 02px solid;
-  border-top: 02px solid;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
 }
 
 /**********NOSOTROS**********/
-
 .grillaNosotros {
   margin: 0px;
   background-image: linear-gradient(to top, #030321, #0b3384);
   display: grid;
-  grid-template-areas:
-    "cabecera cabecera"
-    "barraNav barraNav"
-    "principalNos principalNos"
-    "principalNos principalNos"
-    "principalNos principalNos"
-    "pieDePagina pieDePagina";
-    grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
-    grid-template-columns: 1fr 1fr;
+  grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principalNos principalNos" "principalNos principalNos" "principalNos principalNos" "pieDePagina pieDePagina";
+  grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
+  grid-template-columns: 1fr 1fr;
   height: 100vh;
 }
 
 .borderNos {
-  border-bottom: 02px solid;
-  border-top: 02px solid;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
 }
 
 /**********CONTACTO**********/
-
 .grillaContacto {
   margin: 0px;
   background-image: linear-gradient(to top, #030321, #0b3384);
   display: grid;
-  grid-template-areas:
-    "cabecera cabecera"
-    "barraNav barraNav"
-    "principalContac principalContac"
-    "principalContac principalContac"
-    "principalContac principalContac"
-    "pieDePagina pieDePagina";
-    grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
-    grid-template-columns: 1fr 1fr;
+  grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principalContac principalContac" "principalContac principalContac" "principalContac principalContac" "pieDePagina pieDePagina";
+  grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
+  grid-template-columns: 1fr 1fr;
   height: 100vh;
 }
 
 .borderContac {
-  border-bottom: 02px solid;
-  border-top: 02px solid;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
 }
 
 /*FUENTES*/
-
 @font-face {
   font-family: Alien-Encounters-Bold;
   src: url(../fonts/Alien-Encounters-Bold.ttf);
 }
-
 /*****CABECERA*****/
-
 header {
   grid-area: cabecera;
   display: flex;
@@ -138,22 +100,18 @@ header {
   padding-top: 10px;
 }
 
-
 /*****NAVEGACIÓN*****/
-
-.navegacion{
+.navegacion {
   grid-area: barraNav;
 }
-
-.navegacion ul{
+.navegacion ul {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   list-style-type: none;
   padding-right: 20px;
 }
-
-.navegacion ul li a {
+.navegacion ul a {
   color: #ffffff;
   font-family: Alien-Encounters-Bold;
   text-decoration: none;
@@ -163,14 +121,12 @@ header {
   border-style: hidden;
   border-radius: 5px;
 }
-
-.navegacion ul li a:hover {
+.navegacion ul a:hover {
   color: #030321;
   background-color: white;
 }
 
 /*****PRINCIPAL INDEX*****/
-
 .borderIndex {
   grid-area: principal;
   display: flex;
@@ -178,7 +134,6 @@ header {
   color: white;
   font-family: Alien-Encounters-Bold;
 }
-
 .borderIndex h1 {
   display: flex;
   width: 550px;
@@ -187,7 +142,6 @@ header {
 }
 
 /*****PRINCIPAL SERVICIOS*****/
-
 .borderServ {
   grid-area: principalServ;
   display: flex;
@@ -196,13 +150,11 @@ header {
   font-family: Alien-Encounters-Bold;
   padding-top: 40px;
 }
-
-.borderServ ul li {
+.borderServ li {
   display: flex;
   justify-content: center;
   font-size: 25px;
 }
-
 .borderServ h3 {
   display: flex;
   justify-content: center;
@@ -210,7 +162,6 @@ header {
 }
 
 /*****PRINCIPAL UBICACIÓN*****/
-
 .borderUbic {
   grid-area: principalUbic;
   display: flex;
@@ -219,12 +170,10 @@ header {
   color: white;
   font-family: Alien-Encounters-Bold;
 }
-
 .borderUbic h1 {
   font-size: 40px;
   padding-left: 55px;
 }
-
 .borderUbic p {
   padding-left: 55px;
 }
@@ -238,7 +187,6 @@ header {
 }
 
 /*****PRINCIPAL NOSOTROS*****/
-
 .borderNos {
   grid-area: principalNos;
   display: flex;
@@ -247,12 +195,10 @@ header {
   color: white;
   font-family: Alien-Encounters-Bold;
 }
-
 .borderNos h1 {
   font-size: 35px;
   text-align: center;
 }
-
 .borderNos p {
   text-align: center;
   font-size: 20px;
@@ -261,7 +207,6 @@ header {
 }
 
 /*****PRINCIPAL CONTACTO*****/
-
 .borderContac {
   grid-area: principalContac;
   display: flex;
@@ -272,167 +217,103 @@ header {
   padding-top: 15px;
   padding-right: 20px;
 }
-
 .borderContac h2 {
   padding-bottom: 230px;
   font-size: 30px;
 }
 
-
 /*****PIE DE PÁGINA*****/
-
 footer {
   grid-area: pieDePagina;
   padding: 20px;
 }
-
-footer ul li {
+footer li {
   list-style-type: none;
   text-align: right;
 }
-
-footer ul li a {
+footer li a {
   color: #ffffff;
 }
 
-
-
 /********** VERSIÒN MOBILE (MEDIA QUERI)**********/
-
 @media screen and (max-width: 480px) {
-
   /**********GRID MOBILE INDEX**********/
-
   .grillaIndex {
     margin: 0px;
     background-image: linear-gradient(to top, #030321, #0b3384);
-    grid-template-areas:
-      "cabecera"
-      "barraNav"
-      "principal"
-      "principal"
-      "pieDePagina";
-      grid-template-rows: 150px 50px 200px 200px 100px;
+    grid-template-areas: "cabecera" "barraNav" "principal" "principal" "pieDePagina";
+    grid-template-rows: 150px 50px 200px 200px 100px;
     grid-template-columns: 1fr;
     height: 100vh;
   }
-
   /**********GRID MOBILE SERVICIOS**********/
-
   .grillaServicios {
     margin: 0px;
     background-image: linear-gradient(to top, #030321, #0b3384);
-    grid-template-areas:
-      "cabecera"
-      "barraNav"
-      "principalServ"
-      "principalServ"
-      "pieDePagina";
-      grid-template-rows: 150px 50px 200px 200px 100px;
-      grid-template-columns: 1fr;
+    grid-template-areas: "cabecera" "barraNav" "principalServ" "principalServ" "pieDePagina";
+    grid-template-rows: 150px 50px 200px 200px 100px;
+    grid-template-columns: 1fr;
     height: 100vh;
   }
-
   /**********GRID MOBILE UBICACIÓN**********/
-
   .grillaUbicacion {
     margin: 0px;
     background-image: linear-gradient(to top, #030321, #0b3384);
-    grid-template-areas:
-      "cabecera"
-      "barraNav"
-      "principalUbic"
-      "principalMapa"
-      "pieDePagina";
-      grid-template-rows: 150px 50px 200px 500px 100px;
-      grid-template-columns: 1fr;
+    grid-template-areas: "cabecera" "barraNav" "principalUbic" "principalMapa" "pieDePagina";
+    grid-template-rows: 150px 50px 200px 500px 100px;
+    grid-template-columns: 1fr;
     height: 100vh;
   }
-
   /**********GRID MOBILE NOSOTROS**********/
-
   .grillaNosotros {
     margin: 0px;
     background-image: linear-gradient(to top, #030321, #0b3384);
-    grid-template-areas:
-      "cabecera"
-      "barraNav"
-      "principalNos"
-      "principalNos"
-      "pieDePagina";
-      grid-template-rows: 150px 50px 200px 200px 100px;
-      grid-template-columns: 1fr;
+    grid-template-areas: "cabecera" "barraNav" "principalNos" "principalNos" "pieDePagina";
+    grid-template-rows: 150px 50px 200px 200px 100px;
+    grid-template-columns: 1fr;
     height: 100vh;
   }
-
   /**********GRID MOBILE CONTACTO**********/
-
   .grillaContacto {
     margin: 0px;
     background-image: linear-gradient(to top, #030321, #0b3384);
-    grid-template-areas:
-      "cabecera"
-      "barraNav"
-      "principalContac"
-      "principalContac"
-      "principalContac"
-      "principalContac"
-      "principalContac"
-      "principalContac"
-      "principalContac"
-      "principalContac"
-      "principalContac"
-      "principalContac"
-      "principalContac"
-      "principalContac"
-      "pieDePagina";
+    grid-template-areas: "cabecera" "barraNav" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "pieDePagina";
     grid-template-rows: repeat(15, 1fr);
     grid-template-columns: 1fr;
     height: 100vh;
   }
-
   /*****CABECERA VERSIÒN MOBILE*****/
-
-header {
-  display: flex;
-  justify-content: center;
-}
-
-.logoRodval {
-  padding-top: 10px;
-}
-
-
-/*****NAVEGACIÓN VERSIÒN MOBILE*****/
-
-.navegacion{
-  grid-area: barraNav;
-}
-
-.navegacion ul{
-  display: flex;
-  justify-content: space-evenly;
-  list-style-type: none;
-}
-
-.navegacion ul li a {
-  color: #ffffff;
-  font-family: Alien-Encounters-Bold;
-  text-decoration: none;
-  padding: 10px;
-  cursor: pointer;
-  transition: color 1s, background-color 1s;
-  border-style: hidden;
-  border-radius: 5px;
-}
-
-.navegacion ul li a:hover {
-  color: #030321;
-  background-color: white;
-}
-
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .logoRodval {
+    padding-top: 10px;
+  }
+  /*****NAVEGACIÓN VERSIÒN MOBILE*****/
+  .navegacion {
+    grid-area: barraNav;
+  }
+  .navegacion ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+  .navegacion ul a {
+    color: #ffffff;
+    font-family: Alien-Encounters-Bold;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 1s, background-color 1s;
+    border-style: hidden;
+    border-radius: 5px;
+  }
+  .navegacion ul a:hover {
+    color: #030321;
+    background-color: white;
+  }
   /*****PRINCIPAL INDEX VERSIÓN MOBILE*****/
-
   .borderIndex {
     display: flex;
     justify-content: center;
@@ -443,14 +324,11 @@ header {
     padding-bottom: 150px;
     padding-right: 50px;
   }
-
   .borderIndex h1 {
     width: 200px;
     font-size: 30px;
   }
-
   /*****PRINCIPAL SERVICIOS VERSIÓN MOBILE*****/
-
   .borderServ {
     display: flex;
     justify-content: center;
@@ -462,17 +340,13 @@ header {
     padding-bottom: 150px;
     padding-right: 50px;
   }
-
-  .borderServ ul li {
+  .borderServ li {
     font-size: 20px;
   }
-
   .borderServ h3 {
     font-size: 25px;
   }
-
   /*****PRINCIPAL UBICACIÓN VERSIÓN MOBILE*****/
-
   .borderUbic {
     grid-area: principalUbic;
     display: flex;
@@ -485,12 +359,10 @@ header {
     border-bottom: none;
     padding-top: 100px;
   }
-
   .borderUbic h1 {
     font-size: 30px;
     text-align: center;
   }
-
   .borderMapa {
     grid-area: principalMapa;
     display: flex;
@@ -500,9 +372,7 @@ header {
     border-top: none;
     padding-top: 50px;
   }
-
   /*****PRINCIPAL NOSOTROS VERSIÓN MOBILE*****/
-
   .borderNos {
     grid-area: principalNos;
     display: flex;
@@ -513,20 +383,16 @@ header {
     font-family: Alien-Encounters-Bold;
     padding-left: 40px;
   }
-
   .borderNos h1 {
     font-size: 25px;
     text-align: center;
   }
-
   .borderNos p {
     text-align: center;
     font-size: 15px;
     padding-bottom: 20px;
   }
-
   /*****PRINCIPAL CONTACTO VERSIÓN MOBILE*****/
-
   .borderContac {
     grid-area: principalContac;
     display: flex;
@@ -537,19 +403,15 @@ header {
     font-family: Alien-Encounters-Bold;
     padding-left: 10px;
   }
-
   .borderContac h2 {
     font-size: 30px;
     padding-bottom: 0px;
   }
-
   /*****PIE DE PAGINA VERSIÓN MOBILE*****/
-
   footer {
     padding: 0px;
   }
-
-  footer ul li {
+  footer li {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -557,9 +419,7 @@ header {
     color: white;
     padding-right: 30px;
   }
-
-  footer ul li a {
+  footer li a {
     color: #ffffff;
   }
-
-}
+}/*# sourceMappingURL=styles.css.map */
