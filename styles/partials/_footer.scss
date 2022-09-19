@@ -1,0 +1,15 @@
+/*****PIE DE PÁGINA*****/
+
+footer {
+    grid-area: pieDePagina;
+    padding: 20px;
+
+    li {
+        list-style-type: none;
+        text-align: right;
+
+        a {
+            color: $principalColorFont;
+        }
+    }
+}

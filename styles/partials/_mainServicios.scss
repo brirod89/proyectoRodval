@@ -1,0 +1,40 @@
+/**********SERVICIOS**********/
+
+.grillaServicios {
+    margin: 0px;
+    background-image: linear-gradient(to top, $backgroundColorUno, $backgroundColorDos);
+    display: grid;
+    grid-template-areas:
+        "cabecera cabecera"
+        "barraNav barraNav"
+        "principalServ principalServ"
+        "principalServ principalServ"
+        "principalServ principalServ"
+        "pieDePagina pieDePagina";
+    grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+
+    .borderServ {
+        grid-area: principalServ;
+        display: flex;
+        justify-content: center;
+        color: $principalColorFont;
+        font-family: Alien-Encounters-Bold;
+        padding-top: 40px;
+        border-bottom: 02px solid;
+        border-top: 02px solid;
+
+        li {
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
+        }
+
+        h3 {
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+        }
+    }
+}

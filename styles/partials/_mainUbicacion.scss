@@ -1,0 +1,46 @@
+/**********UBICACIÓN**********/
+
+.grillaUbicacion {
+    margin: 0px;
+    background-image: linear-gradient(to top, $backgroundColorUno, $backgroundColorDos);
+    grid-template-areas:
+        "cabecera cabecera"
+        "barraNav barraNav"
+        "principalUbic principalMapa"
+        "principalUbic principalMapa"
+        "principalUbic principalMapa"
+        "pieDePagina pieDePagina";
+    grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+
+    .borderUbic {
+        grid-area: principalUbic;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        color: $principalColorFont;
+        font-family: Alien-Encounters-Bold;
+        border-bottom: 02px solid;
+        border-top: 02px solid;
+
+        h1 {
+            font-size: 40px;
+            padding-left: 55px;
+        }
+
+        p {
+            padding-left: 55px;
+        }
+    }
+
+    .borderMapa {
+        grid-area: principalMapa;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 30px;
+        border-bottom: 02px solid;
+        border-top: 02px solid;
+    }
+}

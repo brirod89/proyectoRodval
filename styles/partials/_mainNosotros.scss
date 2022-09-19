@@ -1,0 +1,40 @@
+/**********NOSOTROS**********/
+
+.grillaNosotros {
+    margin: 0px;
+    background-image: linear-gradient(to top, $backgroundColorUno, $backgroundColorDos);
+    display: grid;
+    grid-template-areas:
+        "cabecera cabecera"
+        "barraNav barraNav"
+        "principalNos principalNos"
+        "principalNos principalNos"
+        "principalNos principalNos"
+        "pieDePagina pieDePagina";
+    grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+
+    .borderNos {
+        grid-area: principalNos;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        color: $principalColorFont;
+        font-family: Alien-Encounters-Bold;
+        border-bottom: 02px solid;
+        border-top: 02px solid;
+
+        h1 {
+            font-size: 35px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}

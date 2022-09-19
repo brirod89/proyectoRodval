@@ -1,0 +1,34 @@
+/**********INDEX**********/
+
+.grillaIndex {
+    margin: 0px;
+    background-image: linear-gradient(to top, $backgroundColorUno, $backgroundColorDos);
+    display: grid;
+    grid-template-areas:
+        "cabecera cabecera"
+        "barraNav barraNav"
+        "principal principal"
+        "principal principal"
+        "principal principal"
+        "pieDePagina pieDePagina";
+    grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+
+    .mainIndex {
+        grid-area: principal;
+        display: flex;
+        align-items: center;
+        color: $principalColorFont;
+        font-family: Alien-Encounters-Bold;
+        border-bottom: 02px solid;
+        border-top: 02px solid;
+
+        h1 {
+            display: flex;
+            width: 550px;
+            font-size: 50px;
+            padding-left: 20px;
+        }
+    }
+}

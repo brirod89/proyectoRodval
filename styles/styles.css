@@ -1,4 +1,54 @@
 @charset "UTF-8";
+/*****HEADER*****/
+header {
+  grid-area: cabecera;
+  display: flex;
+  padding: 20px;
+}
+
+.logoRodval {
+  padding-top: 10px;
+}
+
+/*****NAVEGACIÓN*****/
+.navegacion {
+  grid-area: barraNav;
+}
+.navegacion ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  list-style-type: none;
+  padding-right: 20px;
+}
+.navegacion ul a {
+  color: #ffffff;
+  font-family: Alien-Encounters-Bold;
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 1s, background-color 1s;
+  border-style: hidden;
+  border-radius: 5px;
+}
+.navegacion ul a:hover {
+  color: #030321;
+  background-color: white;
+}
+
+/*****PIE DE PÁGINA*****/
+footer {
+  grid-area: pieDePagina;
+  padding: 20px;
+}
+footer li {
+  list-style-type: none;
+  text-align: right;
+}
+footer li a {
+  color: #ffffff;
+}
+
 /**********INDEX**********/
 .grillaIndex {
   margin: 0px;
@@ -156,56 +206,6 @@
   font-family: Alien-Encounters-Bold;
   src: url(../fonts/Alien-Encounters-Bold.ttf);
 }
-/*****CABECERA*****/
-header {
-  grid-area: cabecera;
-  display: flex;
-  padding: 20px;
-}
-
-.logoRodval {
-  padding-top: 10px;
-}
-
-/*****NAVEGACIÓN*****/
-.navegacion {
-  grid-area: barraNav;
-}
-.navegacion ul {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  list-style-type: none;
-  padding-right: 20px;
-}
-.navegacion ul a {
-  color: #ffffff;
-  font-family: Alien-Encounters-Bold;
-  text-decoration: none;
-  padding: 10px;
-  cursor: pointer;
-  transition: color 1s, background-color 1s;
-  border-style: hidden;
-  border-radius: 5px;
-}
-.navegacion ul a:hover {
-  color: #030321;
-  background-color: white;
-}
-
-/*****PIE DE PÁGINA*****/
-footer {
-  grid-area: pieDePagina;
-  padding: 20px;
-}
-footer li {
-  list-style-type: none;
-  text-align: right;
-}
-footer li a {
-  color: #ffffff;
-}
-
 /*************** VERSIÒN MOBILE (MEDIA QUERI)***************/
 @media screen and (max-width: 480px) {
   /**********GRID MOBILE INDEX**********/

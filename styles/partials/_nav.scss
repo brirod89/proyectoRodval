@@ -1,0 +1,29 @@
+/*****NAVEGACIÓN*****/
+
+.navegacion {
+    grid-area: barraNav;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        list-style-type: none;
+        padding-right: 20px;
+
+        a {
+            color: $principalColorFont;
+            font-family: Alien-Encounters-Bold;
+            text-decoration: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: color 1s, background-color 1s;
+            border-style: hidden;
+            border-radius: 5px;
+
+            &:hover {
+                color: #030321;
+                background-color: white;
+            }
+        }
+    }
+}
