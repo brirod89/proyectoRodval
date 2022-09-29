@@ -20,18 +20,19 @@
         display: flex;
         justify-content: left;
         flex-direction: column;
-        color: $colorFont;
+        color: map-get($map: $colors, $key: colorFont);
         font-family: Alien-Encounters-Bold;
         border-top: solid 2px;
         border-bottom: solid 2px;
 
         h1 {
-            font-size: 40px;
+            font-size: map-get($map: $sizes, $key: tituloSecundario);
             padding-left: 55px;
         }
 
         p {
             padding-left: 55px;
+            font-size: map-get($map: $sizes, $key: textoContenido);
         }
 
     }
@@ -74,7 +75,7 @@
             align-items: center;
             flex-direction: column;
             height: 50px;
-            color: $colorFont;
+            color: map-get($map: $colors, $key: colorFont);
             font-family: Alien-Encounters-Bold;
             border-bottom: none;
             padding-top: 100px;

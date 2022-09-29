@@ -19,7 +19,7 @@
         grid-area: principal;
         display: flex;
         align-items: center;
-        color: $colorFont;
+        color: map-get($map: $colors, $key: colorFont);
         font-family: Alien-Encounters-Bold;
         border-bottom: 02px solid;
         border-top: 02px solid;
@@ -27,7 +27,7 @@
         h1 {
             display: flex;
             width: 550px;
-            font-size: 50px;
+            font-size: map-get($map: $sizes, $key: tituloPresentacion);
             padding-left: 20px;
         }
     }
@@ -56,7 +56,7 @@
             display: flex;
             justify-content: center;
             text-align: center;
-            color: $colorFont;
+            color: map-get($map: $colors, $key: colorFont);
             font-family: Alien-Encounters-Bold;
             padding-top: 150px;
             padding-bottom: 150px;

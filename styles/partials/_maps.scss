@@ -1,0 +1,28 @@
+/*****MAPS*****/
+
+/**COLORES**/
+
+$colors: (
+    backgroundColorUno: #030321,
+    backgroundColorDos: #0b3384,
+    colorFont: #ffffff,
+    colorHover: #030321,
+    backgroundHover: #ffffff
+);
+
+
+/**TAMAÑOS FUENTES WEB**/
+
+$sizes: (
+    tituloPresentacion: 50px,
+    tituloSecundario: 40px,
+    tituloTerciario: 30px,
+    textoContenido: 20px
+);
+
+/**TRANSICIONES**/
+
+$transitions: (
+    transitionColor: color 1s, 
+    transitionBackground: background-color 1s
+);

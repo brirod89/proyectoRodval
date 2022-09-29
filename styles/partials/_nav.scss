@@ -11,18 +11,18 @@
         padding-right: 20px;
 
         a {
-            color: $colorFont;
+            color: map-get($map: $colors, $key: colorFont);
             font-family: Alien-Encounters-Bold;
             text-decoration: none;
             padding: 10px;
             cursor: pointer;
-            transition: color 1s, background-color 1s;
+            transition: map-get($map: $transitions, $key: transitionColor), map-get($map: $transitions, $key: transitionBackground);
             border-style: hidden;
             border-radius: 5px;
 
             &:hover {
-                color: #030321;
-                background-color: white;
+                color: map-get($map: $colors, $key: colorHover);
+                background-color: map-get($map: $colors, $key: backgroundHover);
             }
         }
     }
@@ -44,18 +44,18 @@
             list-style-type: none;
 
             a {
-                color: $colorFont;
+                color: map-get($map: $colors, $key: colorFont);
                 font-family: Alien-Encounters-Bold;
                 text-decoration: none;
                 padding: 10px;
                 cursor: pointer;
-                transition: color 1s, background-color 1s;
+                transition: map-get($map: $transitions, $key: transitionColor), map-get($map: $transitions, $key: transitionBackground);
                 border-style: hidden;
                 border-radius: 5px;
 
                 &:hover {
-                    color: #030321;
-                    background-color: white;
+                    color: map-get($map: $colors, $key: colorHover);
+                    background-color: map-get($map: $colors, $key: backgroundHover);
                 }
             }
         }
