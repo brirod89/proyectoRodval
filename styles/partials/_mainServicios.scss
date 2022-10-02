@@ -11,15 +11,8 @@
         "pieDePagina pieDePagina";
     grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
 
-    .borderServ {
-        grid-area: principalServ;
-        display: flex;
-        justify-content: center;
-        color: map-get($map: $colors, $key: colorFont);
-        font-family: Alien-Encounters-Bold;
-        padding-top: 40px;
-        border-bottom: 02px solid;
-        border-top: 02px solid;
+    .mainServ {
+        @include displayGrids(center, center, center, principalServ, 40px);
 
         li {
             display: flex;
@@ -54,7 +47,7 @@
         grid-template-columns: 1fr;
         height: 100vh;
 
-        .borderServ {
+        .mainServ {
             display: flex;
             justify-content: center;
             align-items: center;

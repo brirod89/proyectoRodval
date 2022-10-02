@@ -11,15 +11,8 @@
         "pieDePagina pieDePagina";
     grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
 
-    .borderUbic {
-        grid-area: principalUbic;
-        display: flex;
-        justify-content: left;
-        flex-direction: column;
-        color: map-get($map: $colors, $key: colorFont);
-        font-family: Alien-Encounters-Bold;
-        border-top: solid 2px;
-        border-bottom: solid 2px;
+    .mainUbic {
+        @include displayGrids(left, none, column, principalUbic, 0px);
 
         h1 {
             font-size: map-get($map: $sizes, $key: tituloSecundario);
@@ -33,14 +26,9 @@
 
     }
 
-    .borderMapa {
-        grid-area: principalMapa;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+    .mapa {
+        @include displayGrids(flex-end, center, none, principalMapa, 0px);
         padding-right: 30px;
-        border-top: solid 2px;
-        border-bottom: solid 2px;
     }
 }
 
@@ -64,7 +52,7 @@
         grid-template-columns: 1fr;
         height: 100vh;
 
-        .borderUbic {
+        .mainUbic {
             grid-area: principalUbic;
             display: flex;
             justify-content: center;
@@ -82,7 +70,7 @@
             }
         }
 
-        .borderMapa {
+        .mapa {
             grid-area: principalMapa;
             display: flex;
             justify-content: center;

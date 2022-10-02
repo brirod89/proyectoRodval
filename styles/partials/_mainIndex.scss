@@ -12,14 +12,8 @@
     grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;       
 
     .mainIndex {
-        grid-area: principal;
-        display: flex;
-        align-items: center;
-        color: map-get($map: $colors, $key: colorFont);
-        font-family: Alien-Encounters-Bold;
-        border-bottom: 02px solid;
-        border-top: 02px solid;
-
+        @include displayGrids(none, center, none, principal, 0px);
+     
         h1 {
             display: flex;
             width: 550px;

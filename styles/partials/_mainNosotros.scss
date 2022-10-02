@@ -11,15 +11,8 @@
         "pieDePagina pieDePagina";
     grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
 
-    .borderNos {
-        grid-area: principalNos;
-        display: flex;
-        justify-content: left;
-        flex-direction: column;
-        color: map-get($map: $colors, $key: colorFont);
-        font-family: Alien-Encounters-Bold;
-        border-bottom: 02px solid;
-        border-top: 02px solid;
+    .mainNos {
+        @include displayGrids(left, none, column, principalNos, 0px);
 
         h1 {
             font-size: map-get($map: $sizes, $key: tituloSecundario);

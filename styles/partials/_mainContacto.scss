@@ -11,17 +11,10 @@
         "pieDePagina pieDePagina";
     grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
 
-    .borderContac {
-        grid-area: principalContac;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-evenly;
-        color: map-get($map: $colors, $key: colorFont);
-        font-family: Alien-Encounters-Bold;
-        padding-top: 15px;
+    .mainContac {
+        @include displayGrids(space-evenly, flex-start, none, principalContac, 15px);
         padding-right: 20px;
-        border-bottom: 02px solid;
-        border-top: 02px solid;
+
 
         h2 {
             padding-bottom: 230px;

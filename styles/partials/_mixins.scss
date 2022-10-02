@@ -1,0 +1,12 @@
+@mixin displayGrids ($ejeX, $ejeY, $orientacion, $areaTipo, $paddingTop){
+    display: flex;
+    grid-area: $areaTipo;
+    font-family: Alien-Encounters-Bold; 
+    align-items: $ejeY;
+    justify-content: $ejeX;
+    flex-direction: $orientacion;
+    color: map-get($map: $colors, $key: colorFont);
+    border-bottom: 02px solid;
+    border-top: 02px solid;
+    padding-top: $paddingTop;
+}
