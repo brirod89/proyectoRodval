@@ -1,0 +1,16 @@
+%grillaEstructura{
+    margin: 0px;
+    background-image: linear-gradient(to top, $backgroundColorUno, $backgroundColorDos);
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;  
+}
+
+%grillaEstructuraMobile{
+    margin: 0px;
+    background-image: linear-gradient(to top, $backgroundColorUno, $backgroundColorDos);
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;  
+
+}

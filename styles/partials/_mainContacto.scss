@@ -1,9 +1,7 @@
 /**********CONTACTO**********/
 
 .grillaContacto {
-    margin: 0px;
-    background-image: linear-gradient(to top, $backgroundColorUno, $backgroundColorDos);
-    display: grid;
+    @extend %grillaEstructura;
     grid-template-areas:
         "cabecera cabecera"
         "barraNav barraNav"
@@ -12,8 +10,6 @@
         "principalContac principalContac"
         "pieDePagina pieDePagina";
     grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
 
     .borderContac {
         grid-area: principalContac;

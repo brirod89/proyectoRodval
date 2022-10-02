@@ -3,7 +3,16 @@
 /**COLORES**/
 /**TAMAÑOS FUENTES WEB**/
 /**TRANSICIONES**/
-/**********COLORS*********/ /**********HEADER**********/
+/**********COLORS*********/
+.grillaContacto, .grillaNosotros, .grillaUbicacion, .grillaServicios, .grillaIndex {
+  margin: 0px;
+  background-image: linear-gradient(to top, #030321, #0b3384);
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+}
+
+/**********HEADER**********/
 header {
   grid-area: cabecera;
   display: flex;
@@ -113,13 +122,8 @@ footer li a {
 }
 /**********INDEX**********/
 .grillaIndex {
-  margin: 0px;
-  background-image: linear-gradient(to top, #030321, #0b3384);
-  display: grid;
   grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principal principal" "principal principal" "principal principal" "pieDePagina pieDePagina";
   grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
 }
 .grillaIndex .mainIndex {
   grid-area: principal;
@@ -165,13 +169,8 @@ footer li a {
 }
 /**********SERVICIOS**********/
 .grillaServicios {
-  margin: 0px;
-  background-image: linear-gradient(to top, #030321, #0b3384);
-  display: grid;
   grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principalServ principalServ" "principalServ principalServ" "principalServ principalServ" "pieDePagina pieDePagina";
   grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
 }
 .grillaServicios .borderServ {
   grid-area: principalServ;
@@ -225,13 +224,8 @@ footer li a {
 }
 /**********UBICACIÓN**********/
 .grillaUbicacion {
-  margin: 0px;
-  background-image: linear-gradient(to top, #030321, #0b3384);
-  display: grid;
   grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principalUbic principalMapa" "principalUbic principalMapa" "principalUbic principalMapa" "pieDePagina pieDePagina";
   grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
 }
 .grillaUbicacion .borderUbic {
   grid-area: principalUbic;
@@ -300,13 +294,8 @@ footer li a {
 }
 /**********NOSOTROS**********/
 .grillaNosotros {
-  margin: 0px;
-  background-image: linear-gradient(to top, #030321, #0b3384);
-  display: grid;
   grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principalNos principalNos" "principalNos principalNos" "principalNos principalNos" "pieDePagina pieDePagina";
   grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
 }
 .grillaNosotros .borderNos {
   grid-area: principalNos;
@@ -362,13 +351,8 @@ footer li a {
 }
 /**********CONTACTO**********/
 .grillaContacto {
-  margin: 0px;
-  background-image: linear-gradient(to top, #030321, #0b3384);
-  display: grid;
   grid-template-areas: "cabecera cabecera" "barraNav barraNav" "principalContac principalContac" "principalContac principalContac" "principalContac principalContac" "pieDePagina pieDePagina";
   grid-template-rows: 1.5fr 0.5fr 100px 100px 100px 1.5fr;
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
 }
 .grillaContacto .borderContac {
   grid-area: principalContac;
