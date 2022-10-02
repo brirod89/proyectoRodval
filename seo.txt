@@ -1,0 +1,14 @@
+En el archivo index.html sumé el SEO con las siguientes características:
+
+•	Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: “Soluciones de Electricidad y Aire Acondicionado para hogares y empresas."
+•	Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "aire, acondicionado, electricidad, electricista, Edenor, Edesur, reparaciones"
+•	Encabezado: para el encabezado del h1 utilicé el texto “Electricidad y Aire Acondicionado para tu hogar o empresa”
+
+
+
+Debajo adjunto las otras descripciones correspondientes a cada página:
+
+-	Servicios: Diferentes tipos de servicios: Instalaciones eléctricas y de aire aconcionado. Recordar por facor que los presupuestos tienen una validez de 15 días luego de ser enviadoa al cliente.
+-	Ubicación: Nos ubicamos en el barrio de Saavedra (CABA). Los servicios se realizan en el territorio de CABA y GBA.
+-	Nosotros: Experiencia y dedicación en nuestra profesión hace más de 20 años. Atendido por su propio dueño.
+-	Contacto: Ante alguna consulta o pedido de presupuesto, por favor llenar el correspondiente formulario. Será respondido a la brevedad.
