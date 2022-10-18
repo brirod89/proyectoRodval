@@ -391,8 +391,8 @@ footer li a {
   .grillaContacto {
     margin: 0px;
     background-image: linear-gradient(to top, #030321, #0b3384);
-    grid-template-areas: "cabecera" "barraNav" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "principalContac" "pieDePagina";
-    grid-template-rows: repeat(15, 1fr);
+    grid-template-areas: "cabecera" "barraNav" "principalContac" "principalContac" "principalContac" "principalContac" "pieDePagina";
+    grid-template-rows: 150px 50px 200px 200px 200px 200px 100px;
     grid-template-columns: 1fr;
     height: 100vh;
   }
